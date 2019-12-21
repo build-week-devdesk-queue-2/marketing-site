@@ -1,2 +1,28 @@
 // Navigation code here
 
+nav {
+    .displayFlex(column, space-around, center);
+    text-align: center;
+
+    h1 {
+        padding: 2rem;
+        font-size: 2rem;
+    }
+
+    .nav-links {
+       .displayFlex(row, center, center);
+        margin: 1rem;
+      
+        a {
+            padding: 1rem 1.5rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+
+            &:hover {
+               text-decoration: underline;
+            }
+        }
+
+         
+    }
+}
