@@ -1,0 +1,31 @@
+.about {
+
+    h3 {
+        font-size: 2.8rem;
+        margin: 5rem auto 3rem;
+        text-align: center;
+    }
+
+    .team-list {
+
+        div {
+            width: 90%;
+             .centerElement(1rem);
+            background: @secondary-background-color;
+            .displayFlex(row, space-around, center);
+            padding: 1rem;
+            border-radius: 4px;
+            
+            img{
+                width: 5rem;
+            }
+
+            ul {
+                .displayFlex(row, space-around, center);
+                flex: 2;
+                margin-left: 1rem;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

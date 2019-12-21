@@ -1,1 +1,44 @@
 // Home page
+header {
+
+    text-align: center;
+   
+    h2 {
+        font-size: 3.3rem;
+        padding: 1.6rem;
+        line-height: 4rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+        padding: 1.6rem;
+        line-height: 2.8rem;
+
+    }
+
+    .button-section {
+        .displayFlex(column, space-between, center);
+        margin: 1rem;
+
+        button {
+            .centerElement(1rem);
+            width: 90%;
+            max-width: 35rem;
+            border-radius: 4px;
+            font-size: 2rem;
+            padding: 1rem;
+            letter-spacing: 2px;
+            border: none;
+            background: @theme-color;
+            color: @main-background-color;
+            box-shadow: 0 3px 10px -2px rgba(20,45,100,.25);
+
+            &:last-child {
+                border: 2px solid @theme-color;
+                background: transparent;
+                color: @theme-color;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
