@@ -15,3 +15,4 @@ The project should demonstrate student's proficiency by working with a group of 
 - [ ] an about us section, as a second page, includes images of the members of your team, and links to one another's socials/Github.
 
 [Link](https://docs.google.com/document/d/1PRuUblVfB9gsop6rZ4gl-piXrkPA5qsSKkP9Rg0Duh0) to Product Canvas. 
+[Link](https://devdesk-queue2.netlify.com/) to the Landing Page.

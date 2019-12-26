@@ -1,5 +1,4 @@
 .product {
-
     background: @secondary-background-color;
     text-align: center;
 
@@ -13,16 +12,23 @@
         font-size: 1.8rem;
         padding: 1.6rem;
         line-height: 28px;
+         max-width: 100rem;
+        .centerElement(1rem);
     }
 
     .product-info {
         .displayFlex(row, space-evenly, center);
         flex-wrap: wrap;
+        max-width: 100rem;
+        .centerElement(1rem);
 
         div {
             background: @main-background-color;
             width: 90%;
+            max-width: 30rem;
+            height: 45rem;
             margin-top: 2rem;
+            margin-right: 1rem;
             padding: 1rem;
 
             img {

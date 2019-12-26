@@ -4,6 +4,21 @@ footer {
     background: @footer-background;
     color: @footer-font-color;
     text-align: center;
+    padding-top: 3rem;
+    
+    div {
+       
+        .displayFlex(column, center, center);
+        @media @tablet {
+            .displayFlex(row, center, start);
+        }
+
+        section:first-child  {
+            @media @tablet {
+            margin-right: 3rem;
+            }
+        }
+    }
 
     h3 {
         text-transform: uppercase;
@@ -13,7 +28,6 @@ footer {
 
     li {
         padding: 1rem;
-
         &:hover {
             color: @footer-font-color2;
         }
@@ -21,6 +35,6 @@ footer {
 
     p{
         font-size: .8rem;
-        padding: 3rem;
+        padding: 5rem;
     }
 }

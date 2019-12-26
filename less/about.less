@@ -1,5 +1,4 @@
 .about {
-
     h3 {
         font-size: 2.8rem;
         margin: 5rem auto 3rem;
@@ -7,17 +6,35 @@
     }
 
     .team-list {
+        @media @tablet {
+            .displayFlex(row, center, center);
+            flex-wrap: wrap;
+             max-width: 100rem;
+            .centerElement(1rem);
+        }
 
         div {
             width: 90%;
+            max-width: 40rem;
              .centerElement(1rem);
             background: @secondary-background-color;
             .displayFlex(row, space-around, center);
             padding: 1rem;
             border-radius: 4px;
+            @media @tablet {
+                flex-wrap: wrap;
+                .displayFlex(column, space-around, center);
+                width: 30%;
+                max-width: 30rem;
+                margin: 2rem;
+            }
             
-            img{
+            img {
                 width: 5rem;
+                @media @tablet {
+                    width: 7rem; 
+                    margin: 2rem;
+                }
             }
 
             ul {
@@ -25,7 +42,16 @@
                 flex: 2;
                 margin-left: 1rem;
                 font-size: 1.3rem;
-            }
-        }
+
+                 @media @tablet {
+                    flex: 1;
+                    .displayFlex(column, center, center);
+                    padding: 2rem;
+                }
+
+                li {
+                    padding-top: 1.5rem;
+                }
+             }
     }
-}
+}}
