@@ -212,6 +212,27 @@ footer p {
 header {
   text-align: center;
 }
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/laptop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60rem;
+    max-width: 150rem;
+    margin: 0rem auto;
+  }
+}
+@media (min-width: 768px) {
+  header .text-section {
+    width: 50%;
+    color: #fff;
+  }
+}
 header h2 {
   font-size: 3.3rem;
   padding: 1.6rem;
@@ -222,6 +243,18 @@ header p {
   padding: 1.6rem;
   line-height: 2.8rem;
 }
+@media (min-width: 1000px) {
+  header p {
+    max-width: 40rem;
+    margin: 0rem auto;
+    margin-left: 10rem;
+  }
+}
+@media (min-width: 768px) {
+  header img {
+    display: none;
+  }
+}
 header .button-section {
   display: flex;
   flex-direction: column;
@@ -229,10 +262,16 @@ header .button-section {
   align-items: center;
   margin: 1rem;
 }
+@media (min-width: 768px) {
+  header .button-section {
+    margin: 0;
+    width: 50%;
+  }
+}
 header .button-section button {
   margin: 1rem auto;
   width: 90%;
-  max-width: 35rem;
+  max-width: 30rem;
   border-radius: 4px;
   font-size: 2rem;
   padding: 1rem;
@@ -241,12 +280,31 @@ header .button-section button {
   background: #C9445D;
   color: #fff;
   box-shadow: 0 3px 10px -2px rgba(20, 45, 100, 0.25);
+  transition: all 0.4s;
+}
+@media (min-width: 1000px) {
+  header .button-section button {
+    font-size: 2rem;
+    padding: 1.8rem;
+    max-width: 40rem;
+  }
+}
+header .button-section button:first-child:hover {
+  background: #a93147;
 }
 header .button-section button:last-child {
   border: 2px solid #C9445D;
   background: transparent;
   color: #C9445D;
   margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  header .button-section button:last-child {
+    margin-top: 2rem;
+  }
+}
+header .button-section button:hover {
+  transform: scale(1.1);
 }
 .product {
   background: #F4F4F4;
