@@ -317,8 +317,18 @@ header .button-section button:last-child {
   margin: 5rem auto 3rem;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .about .team-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
 .about .team-list div {
   width: 90%;
+  max-width: 40rem;
   margin: 1rem auto;
   background: #F4F4F4;
   display: flex;
@@ -328,8 +338,26 @@ header .button-section button:last-child {
   padding: 1rem;
   border-radius: 4px;
 }
+@media (min-width: 768px) {
+  .about .team-list div {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    max-width: 30rem;
+    margin: 2rem;
+  }
+}
 .about .team-list div img {
   width: 5rem;
+}
+@media (min-width: 768px) {
+  .about .team-list div img {
+    width: 7rem;
+    margin: 2rem;
+  }
 }
 .about .team-list div ul {
   display: flex;
@@ -339,4 +367,17 @@ header .button-section button:last-child {
   flex: 2;
   margin-left: 1rem;
   font-size: 1.3rem;
+}
+@media (min-width: 768px) {
+  .about .team-list div ul {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+}
+.about .team-list div ul li {
+  padding-top: 1.5rem;
 }
