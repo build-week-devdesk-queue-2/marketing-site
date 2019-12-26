@@ -1,7 +1,23 @@
 // Home page
 header {
+    text-align: center; 
+    @media @tablet {
+        .displayFlex(row, center, center);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/laptop.jpg);
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+        height: 60rem;
+        max-width: 150rem;
+        .centerElement(0rem); 
+    }
 
-    text-align: center;
+    .text-section {
+        @media @tablet {
+            width: 50%;
+            color: @white;
+        }
+    }
    
     h2 {
         font-size: 3.3rem;
@@ -13,17 +29,32 @@ header {
         font-size: 1.8rem;
         padding: 1.6rem;
         line-height: 2.8rem;
+        @media @desktop {
+            max-width: 40rem;
+            .centerElement(0rem); 
+            margin-left: 10rem;
+        }
+    }
 
+    img {
+        @media @tablet {
+            display: none;
+        }
     }
 
     .button-section {
         .displayFlex(column, space-between, center);
         margin: 1rem;
+        @media @tablet {
+            margin: 0;
+            width: 50%;
+        }
+       
 
         button {
             .centerElement(1rem);
             width: 90%;
-            max-width: 35rem;
+            max-width: 30rem;
             border-radius: 4px;
             font-size: 2rem;
             padding: 1rem;
@@ -32,12 +63,29 @@ header {
             background: @theme-color;
             color: @main-background-color;
             box-shadow: 0 3px 10px -2px rgba(20,45,100,.25);
+            transition: all .4s;
+            @media @desktop { 
+                font-size: 2rem;
+                padding: 1.8rem;
+                max-width: 40rem;
+            }
+
+            &:first-child:hover {
+            background: darken(@theme-color, 10%);
+            }
 
             &:last-child {
                 border: 2px solid @theme-color;
                 background: transparent;
                 color: @theme-color;
                 margin-top: 1rem;
+                @media @tablet {
+                    margin-top: 2rem;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.1);
             }
         }
     }
