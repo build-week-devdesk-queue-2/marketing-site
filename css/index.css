@@ -173,6 +173,26 @@ footer {
   background: #13121C;
   color: #707486;
   text-align: center;
+  padding-top: 3rem;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+}
+@media (min-width: 768px) {
+  footer div section:first-child {
+    margin-right: 3rem;
+  }
 }
 footer h3 {
   text-transform: uppercase;
@@ -187,7 +207,7 @@ footer li:hover {
 }
 footer p {
   font-size: 0.8rem;
-  padding: 3rem;
+  padding: 5rem;
 }
 header {
   text-align: center;
