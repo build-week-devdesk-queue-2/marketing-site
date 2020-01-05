@@ -150,6 +150,14 @@ nav {
   align-items: center;
   text-align: center;
 }
+@media (min-width: 1000px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 nav h1 {
   padding: 2rem;
   font-size: 2rem;
