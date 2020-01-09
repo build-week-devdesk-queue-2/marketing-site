@@ -150,6 +150,14 @@ nav {
   align-items: center;
   text-align: center;
 }
+@media (min-width: 1000px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 nav h1 {
   padding: 2rem;
   font-size: 2rem;
@@ -165,6 +173,11 @@ nav .nav-links a {
   padding: 1rem 1.5rem;
   font-size: 1.2rem;
   cursor: pointer;
+}
+@media (min-width: 1000px) {
+  nav .nav-links a {
+    font-size: 1.4rem;
+  }
 }
 nav .nav-links a:hover {
   text-decoration: underline;
@@ -202,12 +215,22 @@ footer h3 {
 footer li {
   padding: 1rem;
 }
+@media (min-width: 1000px) {
+  footer li {
+    font-size: 1rem;
+  }
+}
 footer li:hover {
   color: #acb2cc;
 }
 footer p {
   font-size: 0.8rem;
   padding: 5rem;
+}
+@media (min-width: 1000px) {
+  footer p {
+    font-size: 1rem;
+  }
 }
 header {
   text-align: center;
@@ -447,4 +470,7 @@ header .button-section button:hover {
 }
 .about .team-list div ul li {
   padding-top: 1.5rem;
+}
+.about .team-list div ul li a:hover {
+  text-decoration: underline;
 }

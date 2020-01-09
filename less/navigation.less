@@ -3,6 +3,9 @@
 nav {
     .displayFlex(column, space-around, center);
     text-align: center;
+    @media @desktop {
+        .displayFlex(row, space-between, center);
+    }
 
     h1 {
         padding: 2rem;
@@ -17,6 +20,9 @@ nav {
             padding: 1rem 1.5rem;
             font-size: 1.2rem;
             cursor: pointer;
+            @media @desktop {
+                 font-size: 1.4rem;
+            }
 
             &:hover {
                text-decoration: underline;
