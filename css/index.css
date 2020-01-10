@@ -271,6 +271,8 @@ header p {
     max-width: 40rem;
     margin: 0rem auto;
     margin-left: 10rem;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
   }
 }
 @media (min-width: 768px) {
@@ -291,7 +293,7 @@ header .button-section {
     width: 50%;
   }
 }
-header .button-section button {
+header .button-section a {
   margin: 1rem auto;
   width: 90%;
   max-width: 30rem;
@@ -306,28 +308,17 @@ header .button-section button {
   transition: all 0.4s;
 }
 @media (min-width: 1000px) {
-  header .button-section button {
+  header .button-section a {
     font-size: 2rem;
     padding: 1.8rem;
     max-width: 40rem;
   }
 }
-header .button-section button:first-child:hover {
+header .button-section a:hover {
   background: #a93147;
 }
-header .button-section button:last-child {
-  border: 2px solid #C9445D;
-  background: transparent;
-  color: #C9445D;
-  margin-top: 1rem;
-}
-@media (min-width: 768px) {
-  header .button-section button:last-child {
-    margin-top: 2rem;
-  }
-}
-header .button-section button:hover {
-  transform: scale(1.1);
+header .button-section a:hover {
+  transform: scale(1.05);
 }
 .product {
   background: #F4F4F4;
